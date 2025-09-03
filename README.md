@@ -5,7 +5,6 @@
 
 To view running processes and their details in Linux, the following command is used:
 
-```bash
 $ ps -ef
 
 This displays:
@@ -28,7 +27,7 @@ Processes are associated with memory segments and managed by the kernel using Pr
 
 ---
 
-2. Scheduler and Process Scheduling
+## 2. Scheduler and Process Scheduling
 
 The scheduler selects which process to run from the ready queue based on the scheduling policy.
 
@@ -62,7 +61,7 @@ Ensures predictability and deadlines.
 
 ---
 
-3. Memory Layout of a Process
+## 3. Memory Layout of a Process
 
 When a program (a.out) is executed, the process image is loaded into RAM.
 
@@ -92,7 +91,7 @@ Kernel Space is reserved for OS management.
 
 ---
 
-4. Process Control Block (PCB)
+## 4. Process Control Block (PCB)
 
 Each process is represented by a PCB in kernel space.
 It stores all metadata required to manage a process.
@@ -114,7 +113,7 @@ classDiagram
 
 ---
 
-5. Process Creation and Execution
+## 5. Process Creation and Execution
 
 sequenceDiagram
     participant U as User (Terminal)
@@ -134,7 +133,7 @@ sequenceDiagram
 
 ---
 
-Summary
+## Summary
 
 GPOS: Uses Round Robin Scheduling → fairness, multitasking.
 
